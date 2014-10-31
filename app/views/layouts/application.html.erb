@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TodoListDemo</title>
+  <title>Todo List Demo</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header><h1>Todo List</h1></header>
 
-<%= yield %>
+<%= yield %> <!-- Our views get injected here. -->
 
 </body>
 </html>
